@@ -4,3 +4,6 @@ develop-eggs
 eggs
 spaws.egg-info
 *.pyc
+.idea
+build
+dist
