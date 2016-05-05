@@ -37,6 +37,7 @@ class Spaws(object):
             if inst.state not in ["shutting-down", "terminated"]:
                 inst.start()
         wait_for_cluster_state(
+            conn,
             cluster_instances=(master_nodes + slave_nodes),
             cluster_state='ssh-ready',
             opts=self.opts
