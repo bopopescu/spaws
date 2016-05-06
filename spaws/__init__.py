@@ -9,10 +9,12 @@ from spaws.spark_ec2 import stringify_command, ssh_command, get_existing_cluster
 
 class Spaws(object):
 
-    def __init__(self, cluster_name, region="us-east-1", user="root", identity_file=None, copy_aws_credentials=True):
+    def __init__(self, cluster_name, region="us-east-1", user="root", identity_file=None, copy_aws_credentials=True,
+                 hadoop_major_version=2):
         orig_argv = sys.argv
         try:
-            sys.argv = ["spark-ec2", "--region", region, "--user", user]
+            sys.argv = ["spark-ec2", "--region", region, "--user", user,
+                        "--hadoop-major-version", str(hadoop_major_version)]
             if identity_file:
                 sys.argv += ["--identity-file", identity_file]
             if copy_aws_credentials:
