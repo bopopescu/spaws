@@ -102,8 +102,8 @@ DEFAULT_SPARK_VERSION = SPARK_EC2_VERSION
 DEFAULT_SPARK_GITHUB_REPO = "https://github.com/apache/spark"
 
 # Default location to get the spark-ec2 scripts (and ami-list) from
-# [!] TRACKUITY CHANGE: DEFAULT_SPARK_EC2_GITHUB_REPO to jejansse
-DEFAULT_SPARK_EC2_GITHUB_REPO = "https://github.com/jejansse/spark-ec2"
+# [!] TRACKUITY CHANGE: DEFAULT_SPARK_EC2_GITHUB_REPO to trackuity
+DEFAULT_SPARK_EC2_GITHUB_REPO = "https://github.com/trackuity/spark-ec2"
 DEFAULT_SPARK_EC2_BRANCH = "branch-1.5"
 
 

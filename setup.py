@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 kwargs = {
     "name": "spaws",
-    "version": "0.3",
+    "version": "0.4",
     "packages": find_packages(exclude=["tests", "tests.*"]),
     "install_requires": ["setuptools", "boto", "click"],
     "test_suite": "nose.collector",
